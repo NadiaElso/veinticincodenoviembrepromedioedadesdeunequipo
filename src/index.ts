@@ -29,33 +29,38 @@ if (edades[index]===3) {
 
 console.log("la suma total de las edades igual a 3 es:"+ totaledadesmin3);
   promedio=totaledadesmin3/edades[index];
+  console.log("El promedio de las edades igual a 3:"+promedio)
 }
-if (edades[index]===4) {
+else if(edades[index]===4) {
   totaledadesmin4=edades.reduce((a, b) => a + b, 0);
 
 console.log("la suma total de las edades igual a 4 es:"+ totaledadesmin4);
   promedio=totaledadesmin4/edades[index];
+  console.log("El promedio de las edades igual a 4:"+promedio)
 }
-if (edades[index]===5) {
+else if (edades[index]===5) {
   totaledadesmin5=edades.reduce((a, b) => a + b, 0);
 
 console.log("la suma total de las edades igual a 5 es:"+ totaledadesmin5);
   promedio=totaledadesmin5/edades[index];
+  console.log("El promedio de las edades igual a 5:"+promedio)
 }
-if (edades[index]===6) {
+else if (edades[index]===6) {
   totaledadesmax6=edades.reduce((a, b) => a + b, 0);
 
 console.log("la suma total de las edades igual a 6 es:"+ totaledadesmax6);
   promedio=totaledadesmax6/edades[index];
+  console.log("El promedio de las edades igual a 6:"+promedio)
 }
-if (edades[index]===7) {
+else { 
   totaledadesmax7=edades.reduce((a, b) => a + b, 0);
 
 console.log("la suma total de las edades igual a 7 es:"+ totaledadesmax7);
   promedio=totaledadesmax7/edades[index];
-}
+  console.log("El promedio de las edades igual a 7:"+promedio)
+ }
 
-  console.log("El promedio de las edades es:" +promedio);
+
 }
 
 
@@ -65,3 +70,4 @@ return edadesalazar
 
 
  edadesalazar(3,7)
+
