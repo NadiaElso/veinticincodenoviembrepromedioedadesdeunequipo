@@ -9,6 +9,8 @@ function edadesalazar(max: number, min: number) {
   let edades: number[] = new Array(10);
   let totaledades: number;
   totaledades = 0;
+  let promediototal:number;
+  promediototal=0;
   let totaledadesmin3: number;
   totaledadesmin3 = 0;
   let totaledadesmin4: number;
@@ -26,6 +28,8 @@ function edadesalazar(max: number, min: number) {
     console.log("Las edades son:" + edades);
     totaledades = edades.reduce((a, b) => a + b, 0);
     console.log(totaledades);
+    promediototal=totaledades/edades[index];
+    console.log(promediototal);
 
     if (edades[index] === 3) {
       totaledadesmin3 += edades[index] = 3;
